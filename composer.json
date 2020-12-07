@@ -1,0 +1,31 @@
+{
+    "name": "makkinga/laravel-flags",
+    "description": "A helper for placing SVG flags in your Laravel project",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gydo Makkinga",
+            "email": "gydo@makkinga.online"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/Helpers/Helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Makinga\\Flags\\ServiceProvider"
+            ],
+            "aliases": {
+                "Flag": "Makinga\\Flags\\Facade"
+            }
+        }
+    }
+}
