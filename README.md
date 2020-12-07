@@ -1,5 +1,5 @@
 # Laravel Flags
-A Laravel Blade component for placing filetype icons
+A helper for placing SVG flags in your Laravel project
 
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/makkinga/laravel-flags.svg?label=version)
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/last-commit/makkinga/laravel-flags.svg?label=Updated) 
