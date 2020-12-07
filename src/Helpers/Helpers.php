@@ -3,9 +3,8 @@
 use Makkinga\Flags\Facade;
 
 if (! function_exists('flag')) {
-    function flag(string $countryCode)
+    function flag()
     {
-        ddd($countryCode); // REMOVE
-        return app(Facade::class)->get($countryCode);
+        return app(Facade::class);
     }
 }

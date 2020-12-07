@@ -14,8 +14,8 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(Facade::class, function ($command, $app) {
-            //
+        $this->app->singleton(Facade::class, function () {
+            return new Facade();
         });
     }
 }
