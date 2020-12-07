@@ -21,10 +21,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Makinga\\Flags\\ServiceProvider"
+                "Makkinga\\Flags\\ServiceProvider"
             ],
             "aliases": {
-                "Flag": "Makinga\\Flags\\Facade"
+                "Flag": "Makkinga\\Flags\\Facade"
             }
         }
     }
