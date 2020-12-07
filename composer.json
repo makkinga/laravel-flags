@@ -9,6 +9,12 @@
             "email": "gydo@makkinga.online"
         }
     ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/routing": "^6|^7|^8",
+        "illuminate/session": "^6|^7|^8",
+        "illuminate/support": "^6|^7|^8"
+    },
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
