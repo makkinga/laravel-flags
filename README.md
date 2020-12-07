@@ -31,7 +31,7 @@ See [this page](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes) fo
 
 ## Config
 
-If your locales differ from the ISO codes (e.g.: you use `en` instead of `uk`), you can optionally publish the cofig to overwrite the country codes.
+If your locales differ from the ISO codes (e.g.: you use `en` instead of `uk`), you can optionally publish the cofig to alias the country codes.
 
 ```shell script
 php artisan vendor:publish --provider="Makkinga\Flags\ServiceProvider" --tag="config"
@@ -42,17 +42,19 @@ php artisan vendor:publish --provider="Makkinga\Flags\ServiceProvider" --tag="co
 <?php
 
 return [
-    'locales' = []
+    'aliases' = [
+        //
+    ]
 ];
 ```
 
-To overwrite the codes add your locales to the `locales` array where the key is your locale and the value is the ISO country code:
+To alias the codes add your locales to the `locales` array where the key is your locale and the value is the ISO country code:
 
 ```php
 <?php
 
 return [
-    'locales' = [
+    'aliases' = [
         'en' => 'uk',
     ]
 ];
