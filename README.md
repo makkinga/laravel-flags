@@ -18,7 +18,45 @@ composer require makkinga/laravel-flags
 
 # Usage
 
-TODO
+## Blade
+
+Use this helper to place an SVG in a Blade view. 
+
+```blade
+{!! flag()->country('nl') !!} 
+```
+
+The `country()` method expects an alpa-2 or alpha-3 ISO 3166-1 country code.
+See [this page](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes) for a complete list of all codes.
+
+## Config
+
+If your locales differ from the ISO codes (e.g.: you use `en` instead of `uk`), you can optionally publish the cofig to overwrite the country codes.
+
+```shell script
+php artisan vendor:publish --provider="Makkinga\Flags\ServiceProvider" --tag="config"
+```
+
+**flags.php**
+```php
+<?php
+
+return [
+    'locales' = []
+];
+```
+
+To overwrite the codes add your locales to the `locales` array where the key is your locale and the value is the ISO country code:
+
+```php
+<?php
+
+return [
+    'locales' = [
+        'en' => 'uk',
+    ]
+];
+```
 
 # Licence (MIT)
 
