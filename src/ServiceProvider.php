@@ -18,4 +18,14 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             return new Facade();
         });
     }
+
+    /**
+     * Bootstrap services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        $this->publishes([__DIR__ . '/config/flags.php' => config_path('flags.php')], 'config');
+    }
 }
